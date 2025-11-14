@@ -1,10 +1,12 @@
 // String declaration 
+
 const name="Santosh Kushwaha";
 let repoCount=20;
 
 // console.log(name.length);
 // console.log(name + repoCount + " Value"); //don't do this, it's old syntax to concatenate the strings 
-console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
+console.log(`Hello my name is ${name} and my repo count is ${repoCount}`); 
+//using backticks ` ` 
 
 //Another way to create string using Object 
 let name1=new String("Santosh Kumar");
