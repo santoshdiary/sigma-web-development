@@ -22,7 +22,7 @@ console.log(Array.from({name:"Santosh"})) //Intersting....
 let score1=100;
 let score2=200;
 let score3=300;
-let score4=400;
+let score4=400;1
 
 console.log(Array.of(score1,score2,score3));//creates a array from given set of value(variable)
  
