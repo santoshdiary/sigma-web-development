@@ -4,9 +4,9 @@ let score = "hitesh"
 //console.log(typeof score);
 //console.log(typeof(score));
 
-let valueInNumber = Number(score)
+let valueInNumber = Number(score); //convert into the number
 //console.log(typeof valueInNumber);
-//console.log(valueInNumber);
+// console.log(valueInNumber);
 
 
 // "33" => 33

@@ -1,5 +1,5 @@
 /* 
- As usual in javascript there are two memory locations that used in programing
+ As usual in javascript, there are two memory locations that used in programing
  1. Stack       
  2. Heap
 
