@@ -13,7 +13,7 @@ const { instructor:crsIns} = course
 console.log(crsIns);
 
 
-//JSON - javascript object notation
+//-------------------------JSON - javascript object notation-----------------------------------
 //It is a data format used to send and receive data between server and client.
 // {
 //   "name": "Rahul",
