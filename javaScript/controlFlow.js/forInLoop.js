@@ -1,4 +1,4 @@
-//********* FOR IN LOOP  ***************/
+//********* FOR IN LOOP ***************/
 // Used to iterate mainly for Object ....
 
 let myObj={
@@ -24,5 +24,5 @@ map.set('USA', "United States of America")
 map.set('Fr', "France")
 map.set('IN', "India")
  for (const key in map) {
-    console.log(key);// NOTE - CAN'T ITERATE USING FOR IN LOOP 
+    console.log(key);// NOTE - CAN'T ITERATE USING 'FOR IN' LOOP 
 }
