@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | chai aur code </title>
+</head>
+<body  style="background-color: black; color: aqua;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">Thrusday</div>
+    </div>
+</body>
+<script>
+const parentObj=document.querySelector('.parent');
+// console.log(parentObj); // can access the parent div 
+// console.log(parentObj.childNodes);// return NodeList (all child nodes including '\n')
+// console.log(parentObj.children[1].innerHTML); // return text of 1st child
+
+// for (let i = 0; i < parentObj.children.length; i++) { // can access the elment of Parent obj usig loop
+//    console.log(parentObj.children[i].innerHTML);
+// }
+
+
+parentObj.children[1].style.color='orange'// can manipulate the style 
+// console.log(parentObj.firstElementChild); // return first child 
+// console.log(parentObj.lastElementChild);
+
+const dayOne=document.querySelector('.day') 
+// console.log(dayOne);//return 1st element of class 'day'
+// console.log(dayOne.parentElement); //can access parent Element using child (:
+console.log(dayOne.nextElementSibling); // return next Sibling of the current element. i.e. tuesday
+
+
+console.log('NODES', parentObj.childNodes)
+
+
+
+</script>
+</html>
