@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Remove Elemet using DOM</title>
+  </head>
+  <body style="background: #000; color: bisque">
+    <ul class="language">
+      <li>javaScript</li>
+    </ul>
+  </body>
+  <script>
+    // Add element
+
+    function addElement(lang) {
+      const newli = document.createElement("li");
+      newli.innerHTML = `${lang}`; // since innerHTML travser all tree node therefore it is unoptimised
+      document.querySelector(".language").appendChild(newli);
+    }
+    addElement("python");
+    addElement("HTML");
+
+    function optimisedAddElement(lang) {
+      const newli = document.createElement("li");
+      newli.appendChild(document.createTextNode(`${lang}`)); // here is optimised way
+      document.querySelector(".language").appendChild(newli);
+    }
+    optimisedAddElement("java");
+
+    //Edit
+    const secondLanguage=document.querySelector('li:nth-child(2)')
+    // console.log(secondLanguage); // just for test 
+    // secondLanguage.innerHTML='c++'; // unoptimised way
+    const newList=document.createElement('li')
+    newList.textContent='C++';
+    secondLanguage.replaceWith(newList) // using repaceWith method 
+
+    // Edit-simple
+    const firstLang=document.querySelector('li:first-child')
+    firstLang.outerHTML='<li>Assembly Language</li>'// we have to write whole tage 
+
+    //remove
+    const lastLang=document.querySelector('li:last-child')
+    lastLang.remove();
+
+    
+
+  </script>
+</html>
