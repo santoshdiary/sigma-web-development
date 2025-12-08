@@ -116,5 +116,6 @@ p {
 .resultParas button{
   background-color: blue;
   color: white;
+  cursor: pointer;
   
 }
