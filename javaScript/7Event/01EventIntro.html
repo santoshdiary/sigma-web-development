@@ -36,7 +36,7 @@
     // document.getElementById('images').addEventListener('click',function(e){
     //     console.log(' clicked inside the ul ')
     //     console.log(e);
-    // },true) // false parameter is defalut, so we don't need to explictly write ; false represents event bubbling that means if child object is clicked then parent object automatically fires. (bubble move ground to sky upward). while ture represents capturing that means parent to child element 
+    // },true) // false parameter is defalut, so we don't need to explictly write ; false represents "event bubbling" that means if child object is clicked then parent object automatically fires. (bubble move ground to sky upward). while ture represents capturing that means parent to child element 
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
@@ -52,7 +52,7 @@
     //     console.log("google clicked")
     // },false)
 
-    // ***************************Remove images after clicking = project's usecase *********************************
+    // *************************** Remove images after clicking = project's usecase *********************************
       document.getElementById('images').addEventListener('click',function(e){
        console.log( e.target.tagName)
        if(e.target.tagName==='IMG'){
