@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <!--The XMLHttpRequest (XHR) is a built-in JavaScript API used to perform HTTP requests and exchange data between a web page and a server without requiring a full page reload. This technique is the foundation of Asynchronous JavaScript and XML (AJAX). 
+
+XMLHttpRequest (XHR) objects are used to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing.-->
+
+    XMLHttpRequest is old api request that rarly used in modern time
+  </body>
+  <script>
+    /* ---------------XMLHttpRequest.readyState--------
+ property returns the state an XMLHttpRequest client is in.
+
+
+0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete.*/
+
+    //READ DOCUMENTATION
+    //https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+
+    const requestUrl = "https://api.github.com/users/santoshdiary"; //string url of api that gives object
+
+    const santoshDetails = new XMLHttpRequest(); //Create a new XMLHttpRequest object
+    santoshDetails.open("GET", requestUrl); //Open the request object ('type of method get, post', string url)
+
+    // console.log(santoshDetails.readyState)// since request state is being changed so it shows sigle changed state 0 to 1
+    santoshDetails.onreadystatechange = function () {
+      // console.log(santoshDetails.readyState) // now it will continuously show all changed (4 ready state) state that mentioned in doc
+
+      if (santoshDetails.readyState == 4) {
+        // if condition reach 4th state (final) state then do this
+        //  let data=this.responseText;// curret context response text that get from server
+        // console.log(data) // show all detail of my object that fetched. "NOTE " => data type of it is string
+        // console.log(typeof data) // NOTE STRING
+
+        const data1 = JSON.parse(this.responseText); // converted in json (object)
+        console.log(` follwers of santosh diary: ${data1.following}`);
+      }
+    };
+    santoshDetails.send(); //send the request
+  </script>
+</html>

@@ -1,8 +1,9 @@
-/**********************  SYNCHRONOUS AND ASYNCHRONOUS JAVASCRIPT  *********************************/
+/*********** SYNCHRONOUS AND ASYNCHRONOUS JAVASCRIPT *********************/
 
 //https://www.geeksforgeeks.org/javascript/synchronous-and-asynchronous-in-javascript/
 
 /*What is Synchronous JavaScript?
+
 In synchronous programming, operations are performed one after the other, in sequence. So, basically each line of code waits for the previous one to finish before proceeding to the next. This means that the program executes in a predictable, linear order, with each task being completed before the next one starts.
 
 This is straightforward and easy to follow, but it has some drawbacks, especially when dealing with time-consuming tasks like fetching data from a server or reading a large file. If such a task is included in the sequence, it will block the execution of the rest of the code until it’s finished, leading to potential delays and a bad user experience.
@@ -13,7 +14,7 @@ This is straightforward and easy to follow, but it has some drawbacks, especiall
 */
 
 /*What is Asynchronous JavaScript?
-Asynchronous programming, on the other hand, allows multiple tasks to run independently of each other. In asynchronous code, a task can be initiated, and while waiting for it to complete, other tasks can proceed. This non-blocking nature helps improve performance and responsiveness, especially in web applications.
+Asynchronous programming, on the other hand, allows multiple tasks to run independently of each other. In asynchronous code, a task can be initiated, and while waiting for it to complete, other tasks can proceed. This non-blocking nature helps improve performance and responsiveness, especially in web applications. 
 console.log("Hi");
 
 // setTimeout(() => {

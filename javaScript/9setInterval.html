@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Interval method</title>
+  </head>
+  <body>
+    <h1>Chia aur Code</h1>
+    <button id="Start">Start</button>
+    <button id="Stop">Stop</button>
+
+    <script>
+
+      /* string print when user click on start button and stop when user click on stop n*/
+      let start = document.getElementById('Start');
+      let stop = document.getElementById('Stop');
+      let printingName = function(){
+        console.log("Printing is started .........")
+        console.log("Hello Santosh Time now:",Date.now())
+      }
+      let intervalId; 
+
+      start.addEventListener('click',function(){
+       intervalId=setInterval(printingName,1000)
+      })
+
+      stop.addEventListener('click', function(){
+        clearInterval(intervalId)
+         console.log("Printing is stopped .........")
+      })
+    </script>
+  </body>
+</html>

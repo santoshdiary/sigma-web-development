@@ -1,0 +1,109 @@
+1. What is an API?
+
+API = Application Programming Interface
+It allows two software systems to communicate.
+
+Example:
+Your JavaScript code → sends request → API server → returns data (JSON).
+
+
+
+✅ 2. What is an API Request?
+
+An API request means you ask the server for data.
+
+In JavaScript, this is done using:
+
+(a) fetch() — modern and most commonly used
+fetch("https://api.example.com/data")
+  .then(response => response.json())
+  .then(data => console.log(data))
+
+(b) XMLHttpRequest (older method)
+
+Rarely used now.
+
+
+
+
+✅ 3. What is the V8 Engine?
+
+V8 = Google’s JavaScript engine
+It runs inside:
+
+Google Chrome
+
+Node.js
+
+
+V8 Responsibilities:
+
+Converts JavaScript → machine code
+
+Executes the code very fast
+
+Manages memory
+
+Helps in asynchronous operations (with help from Web APIs)
+
+
+
+✅ 4. Browser Environment vs JS Engine
+
+JavaScript alone cannot do everything.
+The browser provides extra features:
+
+Provided by Browser (NOT by JS):
+
+DOM
+
+fetch()
+
+Timers (setTimeout, setInterval)
+
+Web APIs
+
+JavaScript (V8) only executes code.
+
+✅ 5. How API Requests Actually Work
+
+When you write fetch():
+
+JS (V8) calls browser’s Web API
+
+Browser sends network request
+
+API server responds
+
+Browser gives data to JS through callback queue
+
+Event loop pushes data back into JS
+
+✅ 6. Event Loop
+
+Event Loop helps manage:
+
+API responses
+
+Timers
+
+Async tasks
+
+It ensures non-blocking behaviour in JavaScript.
+
+✅ 7. JSON (JavaScript Object Notation)
+
+Most API data comes in JSON format.
+
+Example:
+
+{
+  "name": "Santosh",
+  "age": 21
+}
+
+
+In JS:
+
+JSON.parse()
+JSON.stringify()
