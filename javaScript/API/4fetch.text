@@ -1,0 +1,23 @@
+------------------FETCH API --------------
+https://www.geeksforgeeks.org/javascript/javascript-fetch-method/
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+Fetch API is a modern JavaScript way to request data from a server (API) and receive a response.
+
+👉 It is mainly used to:
+Get data from a server (GET)
+Send data to a server (POST)
+Update or delete data (PUT / DELETE)
+
+
+The Fetch API is a modern interface in JavaScript that allows you to make HTTP requests.
+It replaces the older XMLHttpRequest method and provides a cleaner and more flexible way to
+fetch resources asynchronously.
+The Fetch API uses Promises, making it easier to work with asynchronous data.
+
+-->> The fetch() function returns a Promise which is fulfilled with a Response 
+object representing the server's response.
+
+--> The fetch() function will reject the promise on some errors, but not if the server responds 
+with an error status like 404: so we also check the response status and throw if 
+it is not OK
