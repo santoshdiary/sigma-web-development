@@ -14,7 +14,7 @@ const user = {
 // console.log(user.getUserDetails());
 // console.log(this);
 
-//A JavaScript constructor function is a regular function used as a blueprint to create and initialize multiple objects with similar properties and methods. When invoked with the new operator, it automates object creation and binds the this keyword to the newly created instance. 
+//A JavaScript "constructor function" is a regular function used as a blueprint to create and initialize multiple objects with similar properties and methods. When invoked with the new operator, it automates object creation and binds the this keyword to the newly created instance. 
 
 function User(username, loginCount, isLoggedIn){
     this.username = username;
