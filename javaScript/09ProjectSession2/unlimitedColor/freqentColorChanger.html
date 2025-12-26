@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited Color Changer</title>
+</head>
+<body style="background-color: rgb(55, 1, 105); color:aliceblue;">
+    <div class="main">
+        <h1>Here is button below, to Start and Stop the changing Backgound color every second </h1>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+</body>
+<script>
+   
+    let randomColor=function (){
+        let hex='0123456789ABCDF';
+        let color='#';
+        for(let i=1;i<=6;i++){
+            color+=hex[Math.floor(Math.random()*16)] // picking the random character from hex string and putting the character to color variable to from the color code 
+        }
+        return color;
+    }
+    let intervalId;
+    function changeBg(){
+        if(intervalId==null){ //edge case : if setInerval already set then to prevent seting another one 
+            intervalId= setInterval(changingColor,1000);
+        }
+
+    }
+    function changingColor(){
+         document.body.style.backgroundColor=randomColor();
+    }
+    function stopChangeColor(){
+        clearInterval(intervalId);
+        intervalId=null; // edge case, clear interval after stop button 
+    }
+    document.getElementById('start').addEventListener('click',changeBg)
+    document.getElementById('stop').addEventListener('click',stopChangeColor)
+
+   
+
+
+   
+</script>
+</html>

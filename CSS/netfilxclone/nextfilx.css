@@ -1,0 +1,382 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif, 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  line-height: 1.4;
+}
+
+/* ---------- MAIN SECTION ---------- */
+.main {
+  width: 100%;
+  height: 644px;
+  background: url(assets/images/bg.jpg) center/cover no-repeat;
+  position: relative;
+}
+
+.main .box {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(2, 2, 2);
+  opacity: 0.75;
+  position: absolute;
+  z-index: 1;
+}
+
+/* ---------- NAVBAR ---------- */
+nav {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+
+nav span img {
+  width: 150px;
+  z-index: 10;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-button img {
+  width: 20px;
+}
+
+.nav-button select {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-button button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-button button:hover {
+  background-color: rgb(0, 120, 248);
+}
+
+/* ---------- HEADINGS ---------- */
+.headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 30vh;
+  z-index: 10;
+  color: white;
+  margin-top: 150px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.headings > :nth-child(1),
+.headings > :nth-child(2) {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.headings > :nth-child(3) {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.headings > :nth-child(4) {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ---------- INPUT BOX ---------- */
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  margin-top: 40px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input-box input {
+  width: 320px;
+  max-width: 100%;
+  height: 55px;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+  border: 0.5px solid white;
+  background-color: rgba(23, 23, 23, 0.6);
+  color: white;
+}
+
+.input-box button {
+  font-size: 20px;
+  font-weight: 650;
+  width: 200px;
+  height: 55px;
+  border-radius: 5px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------- SEPARATION ---------- */
+.separation {
+  display: block;
+  width: 100%;
+  height: 7px;
+  background-color: rgb(81, 81, 81);
+}
+
+/* ---------- CONTENT SECTIONS ---------- */
+.first,
+.second,
+.third,
+.four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.text1,
+.text2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  text-align: left;
+}
+
+.text1 :nth-child(1),
+.text2 :nth-child(1) {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.text1 :nth-child(2),
+.text2 :nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* ---------- TV & VIDEO ---------- */
+.visual {
+  position: relative;
+  display: inline-block;
+}
+
+.visual img {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  z-index: 10;
+  display: block;
+}
+
+.visual video {
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  width: 74%;
+  height: auto;
+  z-index: 5;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* ---------- FAQ ---------- */
+.faqs {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.faqs > :nth-child(1) {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.questions .q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  color: #fff;
+  padding: 18px 24px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.q:hover {
+  background-color: #414141;
+  transition: all 0.3s ease;
+}
+
+.questions .q span {
+  font-size: 1.2em;
+}
+
+.questions .q img {
+  width: 32px;
+  height: 32px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  width: 100%;
+  padding: 20px;
+}
+
+.fitem {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.f {
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.f ul li {
+  list-style: none;
+  margin: 15px 0;
+}
+
+footer .copyrights {
+  text-align: center;
+  color: rgb(68, 66, 66);
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* ---------- RESPONSIVE MEDIA QUERIES ---------- */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .headings > :nth-child(1),
+  .headings > :nth-child(2) {
+    font-size: 40px;
+  }
+  .headings > :nth-child(3) {
+    font-size: 18px;
+  }
+  .text1 :nth-child(1),
+  .text2 :nth-child(1) {
+    font-size: 32px;
+  }
+  .text1 :nth-child(2),
+  .text2 :nth-child(2) {
+    font-size: 18px;
+  }
+}
+
+/* Large Phones / Small Tablets */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .headings {
+    margin-top: 100px;
+  }
+
+  .headings > :nth-child(1),
+  .headings > :nth-child(2) {
+    font-size: 30px;
+  }
+
+  .input-box {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .input-box button {
+    width: 100%;
+  }
+
+  .visual img,
+  .second img,
+  .four img {
+    max-width: 300px;
+  }
+}
+
+/* Small Phones */
+@media screen and (max-width: 480px) {
+  nav span img {
+    width: 100px;
+  }
+
+  .headings > :nth-child(1),
+  .headings > :nth-child(2) {
+    font-size: 22px;
+  }
+
+  .headings > :nth-child(3) {
+    font-size: 14px;
+  }
+
+  .headings > :nth-child(4) {
+    font-size: 12px;
+  }
+
+  .text1 :nth-child(1),
+  .text2 :nth-child(1) {
+    font-size: 24px;
+  }
+
+  .text1 :nth-child(2),
+  .text2 :nth-child(2) {
+    font-size: 14px;
+  }
+
+  .visual img {
+    max-width: 250px;
+  }
+}

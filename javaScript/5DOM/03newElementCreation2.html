@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New element Creation using dom</title>
+  </head>
+  <body style="background-color: black; color: bisque"></body>
+  <script>
+
+    //*************************** NEW HTML CREATION USING DOM **********************************
+    const newDiv = document.createElement("div"); //  creates new html element that passed like div,h1 and so on
+    // console.log(newDiv);
+    newDiv.className = "main";
+    newDiv.id = "div1";
+    newDiv.setAttribute("title", "generated Title");
+    newDiv.style.background = "green";
+    newDiv.style.padding = "20px";
+    // newDiv.innerText = "Hello this is generated div";// it override the previous text so, we don't prefere this way
+    // this newly created div element is not visible on page bc, it now in memory only, we have to attach(append0 it into body
+    const addText = document.createTextNode("Chai aur code"); // optimised way
+    newDiv.appendChild(addText);// appends the child into created div 
+    document.body.appendChild(newDiv); // finally the created 'newDiv' will append into body of the page that means it will show on page 
+
+  </script>
+</html>

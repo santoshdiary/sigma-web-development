@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object fit</title>
+    <style>
+      .container {
+        width: 80vw;
+        height: 80vh;
+        border: 2px solid rgb(242, 12, 12);
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 2px solid rgb(12, 12, 242);
+        overflow: hidden;
+      }
+      img {
+        width: 300px;
+        height: 400px;
+        object-fit:fill;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img
+          src="https://images.pexels.com/photos/206557/pexels-photo-206557.jpeg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>

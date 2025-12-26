@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clouser in js</title>
+  </head>
+  <body>
+    <button id="green">Green</button>
+    <button id="orange">orange</button>
+    <script>
+      // for learing clouser, we need to understand lexical scoping first
+      //--------------LEXICAL SCOPING-----------
+
+      //Lexical scoping means: A function can access variables from where it is defined, not from where it is called.
+
+      // function outer(){
+      //     let username = "hitesh"
+      //     // console.log("OUTER", secret); //not accessible
+
+      //     function inner(){
+      //         let secret = "my123"
+      //         console.log("inner", username); //yes acessible
+      //     }
+      //     function innerTwo(){
+      //         console.log("innerTwo", username);
+      //         // console.log(secret); // not accessible
+      //     }
+      //     inner()
+      //     innerTwo()
+      // }
+      // outer()
+      // console.log("TOO OUTER", username); // not accessible
+
+      //-------------CLOUSER -------
+
+      /*A closure is when a function remembers variables from its outer (lexical) scope, even after that outer function has finished executing.
+    📌 Closure exists because of lexical scoping.
+     */
+
+      function makeFunc() {
+        const name = "Mozilla";
+        function displayName() {
+          console.log(name);
+        }
+        return displayName; // yes! will print "name" since when we return display THAT it contains lexical scoping of the makeFunc funciton
+      }
+
+      const myFunc = makeFunc();
+      myFunc();
+    </script>
+    <script>
+      //--------------------REAL WORLD PROBLEM SOLVE USING CLOUSER ----
+
+      //   document.getElementById("orange").onclick = function () {
+      //     document.body.style.backgroundColor = `orange`;
+      //   };
+      //   document.getElementById("green").onclick = function () {
+      //     document.body.style.backgroundColor = `green`;
+      //   };
+      function clickHandler(color) {
+        //document.body.style.backgroundColor = `${color}` //fails because onclick take a function not excution of fuction directly
+        return ()=> { // now everything good
+          document.body.style.backgroundColor = `${color}`; // here arrow function has access of color property By CLOUSER PROPERTY OF JS 
+        };
+      }
+
+      document.getElementById("orange").onclick = clickHandler("orange"); // clickHandler executes direclty, we need to return a function
+      document.getElementById("green").onclick = clickHandler("green");
+    </script>
+  </body>
+</html>
