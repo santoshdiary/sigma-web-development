@@ -1,6 +1,6 @@
 // several ways to create an object in js
 
-//signleton-
+//singleton-
 //Object.create
 
 //object literals
