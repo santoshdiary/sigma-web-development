@@ -6,6 +6,8 @@ const myNums = [1, 2, 3, 4, 5, 6, 7];
 // })
 //CHANING OF METHOD IN ARRAY
 // let newmyNums = myNums.map((element) => element * 10).map((element) => element + 1).filter((element) => element > 35);
+
+//also can write like this - 
 let newmyNums = myNums
   .map((element) => element * 10)
   .map((element) => element + 1)
