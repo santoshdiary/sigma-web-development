@@ -72,7 +72,11 @@ function endGame() {
     userInput.value='';
     userInput.setAttribute('disabled','')
     p.classList.add('button'); // adding a button in p tag 
+<<<<<<< HEAD
     p.innerHTML=`<h3 id="newGame" style="cursor:pointer"> Start New Game </h3>`
+=======
+    p.innerHTML=`<h3 id="newGame"> Start New Game </h3>`
+>>>>>>> 04d34b0cfc04f5f654bb39eddb4d8efe0ad23ed9
    startOver.appendChild(p) // appending the p into result parse section 
     playGame=false;
     newGame()

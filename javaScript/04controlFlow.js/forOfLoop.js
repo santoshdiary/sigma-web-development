@@ -26,7 +26,11 @@ for(const [key,value] of map){
     // console.log(key+"=>"+value);
 }
 
+<<<<<<< HEAD
 //--NOTE OBJECT IS NOT ITERATABLE, HENCE 'FOR OF' LOOP IS NOT WORKS ON IT.---------- 
+=======
+//--//NOTE OBJECT IS NOT ITERATABLE, HENCE 'FOR OF' LOOP IS NOT WORKS ON IT.---------- 
+>>>>>>> 04d34b0cfc04f5f654bb39eddb4d8efe0ad23ed9
 let myObj={
     1:"Santosh",
     2:"aman",

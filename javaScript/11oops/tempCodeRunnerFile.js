@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // class user{
+=======
+class user{
+>>>>>>> 04d34b0cfc04f5f654bb39eddb4d8efe0ad23ed9
 //     constructor(username,email){
 //         this.username=username;
 //         this.email=email;

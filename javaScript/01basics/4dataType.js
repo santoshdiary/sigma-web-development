@@ -1,7 +1,11 @@
 
 "use strict"; // treat all JS code as newer version
 
+<<<<<<< HEAD
 // alert( 3 + 3) // we are using nodejs, not browser it only works on browser
+=======
+// alert( 3 + 3) // we are using nodejs, not browser it obly workso on browser
+>>>>>>> 04d34b0cfc04f5f654bb39eddb4d8efe0ad23ed9
 
 console.log(3 
     +

@@ -18,7 +18,10 @@ for (const key in programming) {
     // console.log(programming[key]);
 }
 
+<<<<<<< HEAD
 //---------------MAP--------------
+=======
+>>>>>>> 04d34b0cfc04f5f654bb39eddb4d8efe0ad23ed9
 const map = new Map()
 map.set('IN', "India")
 map.set('USA', "United States of America")
