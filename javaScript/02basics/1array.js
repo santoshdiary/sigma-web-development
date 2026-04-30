@@ -23,19 +23,16 @@ myArr.shift(); // shift(remove) the added 0th index element;
 // console.log(myArr.indexOf(4));
 
 const newArr = myArr.join(); // converts all elements of an array into a single string. It returns a new string and does not modify the original array. 
-<<<<<<< HEAD
 console.log(myArr); //print in  array format
 console.log(newArr); // print the String of array
-=======
 console.log(myArr); //returns in  array format
 console.log(newArr); // return the String of array
->>>>>>> 04d34b0cfc04f5f654bb39eddb4d8efe0ad23ed9
 console.log(typeof newArr);
 
 // slice, splice
 
 // console.log("A", myArr);
-const myn1 = myArr.slice(1, 3); //return an sliced array that inclueds elements from 1 to 2 ;note index 3 is not included
+const myn1 = myArr.slice(1, 3); //return an sliced array that inclueds elements from 1 to 2; note index 3 is not included
 // console.log(myn1);
 
 // console.log("B", myArr);

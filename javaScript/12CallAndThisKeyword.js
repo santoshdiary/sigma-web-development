@@ -4,7 +4,7 @@ function setUser(userN) {
 }
 function createUser(username, email, password) {
   setUser.call(this, username); //“Run setUser, but force this inside setUser to be the SAME this as createUser” Since createUser was called using new:
-                                //If we do NOT use call(), then setUser is called but username is not stored in the object.
+                                 //If we do NOT use call(), then setUser is called but username is not stored in the object.
   this.email = email;
   this.password = password;
 }

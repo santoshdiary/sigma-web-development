@@ -1,0 +1,3 @@
+react
+1. react dom - for webapp
+2. reac native- for mobileapp
