@@ -1,15 +1,11 @@
 
 "use strict"; // treat all JS code as newer version
 
-<<<<<<< HEAD
 // alert( 3 + 3) // we are using nodejs, not browser it only works on browser
-=======
-// alert( 3 + 3) // we are using nodejs, not browser it obly workso on browser
->>>>>>> 04d34b0cfc04f5f654bb39eddb4d8efe0ad23ed9
 
-console.log(3 
+console.log(3
     +
-     3) // code readability should be high
+    3) // code readability should be high
 
 console.log("Hitesh")
 
@@ -32,6 +28,6 @@ let state;
 
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
-console.log(typeof(name))
+console.log(typeof (name))
 console.log(typeof isLoggedIn)
 

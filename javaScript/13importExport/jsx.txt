@@ -1,0 +1,5 @@
+JAVASCRIPT SYNTAX EXTENSION (JSX)
+it allow us to write html code inside of js file.
+eg.
+
+let h1= <h1> Hello </h1>

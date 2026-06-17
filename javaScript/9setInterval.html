@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,24 +11,23 @@
     <button id="Stop">Stop</button>
 
     <script>
-
       /* string print when user click on start button and stop when user click on stop n*/
-      let start = document.getElementById('Start');
-      let stop = document.getElementById('Stop');
-      let printingName = function(){
-        console.log("Printing is started .........")
-        console.log("Hello Santosh Time now:",Date.now())
-      }
-      let intervalId; 
+      let start = document.getElementById("Start");
+      let stop = document.getElementById("Stop");
+      let printingName = function () {
+        console.log("Printing is started .........");
+        console.log("Hello Santosh Time now:", Date.now());
+      };
+      let intervalId;
 
-      start.addEventListener('click',function(){
-       intervalId=setInterval(printingName,1000)
-      })
+      start.addEventListener("click", function () {
+        intervalId = setInterval(printingName, 1000);
+      });
 
-      stop.addEventListener('click', function(){
-        clearInterval(intervalId)
-         console.log("Printing is stopped .........")
-      })
+      stop.addEventListener("click", function () {
+        clearInterval(intervalId);
+        console.log("Printing is stopped .........");
+      });
     </script>
   </body>
 </html>

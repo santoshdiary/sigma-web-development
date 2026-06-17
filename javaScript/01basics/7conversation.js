@@ -1,11 +1,11 @@
 
 let score = "hitesh"
 
-//console.log(typeof score);
-//console.log(typeof(score));
+// console.log(typeof score);
+// console.log(typeof(score));
 
 let valueInNumber = Number(score); //convert into the number
-//console.log(typeof valueInNumber);
+// console.log(typeof valueInNumber);
 // console.log(valueInNumber);
 
 
@@ -16,11 +16,11 @@ let valueInNumber = Number(score); //convert into the number
 let isLoggedIn = "hitesh"
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-//  console.log(booleanIsLoggedIn);
+ console.log(booleanIsLoggedIn);
 
 // 1 => true; 0 => false
 // "" => false
-// "hitesh" => true
+// "hitesh" => true (koi bhi value ho)
 
 let someNumber = 33
 

@@ -1,0 +1,7 @@
+HOOKS, IN REACT
+this is a special type of function which help us to update the same vairable in 
+different palces on UI without targeting one by one and updating each one. By using pure js
+this process become more complex. 
+
+---- there are different hooks used to specific task--- 
+some are - useState, 

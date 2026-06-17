@@ -15,7 +15,7 @@ const anotherId = Symbol('123')
 
 console.log(id === anotherId);
 
-// const bigNumber = 3456543576654356754n
+// const bigNumber = 3456543576654356754n; // appends the 'n' for making bigint
 
 
 
