@@ -24,3 +24,32 @@ npm create vite@latest (latest way using vite a utility)
 by default module folder is missing, so we use - "npm install"
 to install all dependencies that require 
 to run project - npm run dev(script on package.json) 
+
+
+
+------------------------HOW REACT WORKS?-------------
+
+React creates a copy of real dom called virtual dom and compare it with real dom & 
+eventually Update only that element or components instead updating whole dom.
+
+
+********** Understand the struture of react project ********** 
+
+Here, App.jsx file is  basically a js file that consists a function (javascript + html)
+and it's exported then, imported by the main.jsx file which actually render the whole scripts
+on index.html using target id "root" on index file. 
+
+
+----------- DAY 3 LEARNINGS--------
+
+1. while making components (jsx file), always capitalize name (function)
+2. file extension .jsx, bc some libraries force us that .
+3. while returning jsx we use empty <> called "Fragment" to bundle the more than one element,
+ since can return only one element 
+<>
+  <h1> Hello world </h1>
+   <p>this is a paragraph....</p>
+</>
+
+4. can create our own components like chai.jsx
+

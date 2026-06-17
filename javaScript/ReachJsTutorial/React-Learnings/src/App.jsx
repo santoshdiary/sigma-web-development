@@ -1,5 +1,5 @@
 function App(){ // it's just a funtion in which what we do, reflected on screen
-  return <h1>Hello World with React</h1>;
+  return <h1>Hello World with React | SANTOSH KUSHWAHA</h1>;
 }
 export default App;
 
