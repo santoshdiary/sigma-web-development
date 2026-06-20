@@ -2,6 +2,8 @@ react
 1. react dom - for webapp
 2. reac native- for mobileapp
 
+JSX- JavaScript XML file
+
 React project is created with the help of utility called npx (node package Execute) OLD WAY
 
 
@@ -18,7 +20,7 @@ Remove packages
 Manage project dependencies
 }
 
-Creation of new React Project - 
+-------Creation of new React Project - 
 npm create vite@latest (latest way using vite a utility)
 
 by default module folder is missing, so we use - "npm install"

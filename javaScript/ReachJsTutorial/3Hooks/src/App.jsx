@@ -1,4 +1,4 @@
-import { useState } from 'react' // import the useState hook from react library
+import { useState } from 'react' // import the 'useState hook' from react library
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -6,7 +6,7 @@ import './App.css'
 
 function App() {
 
-  //------without hooks in console---
+  //------THE UPDATE NOT REFLECTED ON UI, without using hooks---
   // let counter=10;
 
   // const increase=()=>{
@@ -32,12 +32,12 @@ function App() {
   //------using hook -----
 
 
-  const [counter, setCount] = useState(10);
+  const [counter, setCount] = useState(10); // here useState is a function that takes initial value & return (current value, render in ui using this funciton )
 
   
   /*------ understand the syntax ------
-    counter = current value
-    setCount = function to update value
+    counter (can be any name) = current value
+    setCount (also can be any name) = function to update value
     10 = initial value*/
 
   const increase = () => {
@@ -50,7 +50,7 @@ function App() {
   }
   return (
     <>
-      {/* ----- can inject variable in using {}  ---- */}
+      {/* ----- NOTE: can inject variable in using {}  ---- */}
       <h1>Counter:{counter}</h1> 
       <button onClick={increase}>Add Value</button>
       <button onClick={decrease}>Remove value</button>
