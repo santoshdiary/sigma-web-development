@@ -56,4 +56,8 @@ on index.html using target id "root" on index file.
 4. can create our own components like chai.jsx
 
 ----------PROP (PROPPERTIES) IN REACT -----
-To pass data from a parent component down to a child component
+To pass data from a parent component down to a child component that make us to reuse a compontents with different values. 
+
+useState hook's setter works in batch to reflect the output in screen that's why calling mutlitple time calling this function will not reflect output on screen different. 
+
+Remember the counter interview problem in this series. 

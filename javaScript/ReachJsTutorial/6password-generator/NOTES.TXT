@@ -1,0 +1,7 @@
+DIFFERENT HOOK THAT USED IN THIS PROJECT 
+1. useEffect - used to store state of a variable and manage it on UI.
+2. useCallback- used to store function in memory (catche) so that avoid rendering 
+3. useEffect - 
+The useEffect hook is one of the most commonly used hooks in ReactJS, used to handle side effects in functional components. jab page render ho tab ye execute hote hain
+4. useRef - used to take reference of a variable. 
+Dependencies - in some hook, we can pass Dependencies that used to re execute the function when it chanaged 
