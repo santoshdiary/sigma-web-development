@@ -1,7 +1,10 @@
 import React from 'react'
 
-function Card({ username, btnText = "visit me" }) {
-    console.log(username);
+function Card({ username, btnText = "visit me" }) { // Here username & btnText are Prop (Properties) used using destructuring. this is a standard way, another way is If you prefer not to destructure, you can accept a single props argument. React packages all incoming attributes into this single JavaScript object
+
+    // console.log(username);
+   
+   
     return (
         <div className="relative h-[400px] w-[300px] rounded-md ">
             <img

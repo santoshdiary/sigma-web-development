@@ -10,9 +10,9 @@ function App() {
     <>
       <h1 className='bg-green-400 text-black p-4 rounded-xl mb-4'>Tailwind test</h1>
 
-      <Card username="chaiaurcode" btnText="click me" />
+      <Card username="chaiaurcode" btnText="click me" />  {/* Here username, btnText are he Prop (Properties) that we can pass to give different value in card  */}
       <Card username="hitesh" />
-      <Card2 />
+      <Card2 btnText="Refer here"  Title="This is Santosh"/>
     </>
   )
 }
