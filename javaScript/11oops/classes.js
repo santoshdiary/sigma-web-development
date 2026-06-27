@@ -19,7 +19,7 @@
 // console.log(user1.encryptPassword());
 // console.log(user1.changeUsername());
 
-// behind the scene: older way 
+// behind the scene: older way
 
 function user(userName, email, password) {
   this.userName = userName;
@@ -27,13 +27,13 @@ function user(userName, email, password) {
   this.password = password;
 }
 
-user.prototype.encryptPassword=function(){ // adding method into user prototype
-   return `${this.password}abc`;  
-}
-user.prototype.changeUsername = function(){
-    return `${this.userName.toUpperCase()}`
-}
+user.prototype.encryptPassword = function () {
+  // adding method into user prototype
+  return `${this.password}abc`;
+};
+user.prototype.changeUsername = function () {
+  return `${this.userName.toUpperCase()}`;
+};
 
-const user2=new user('Kushwaha Brother','example@gmai.com',4736)
+const user2 = new user("Kushwaha Brother", "example@gmai.com", 4736);
 console.log(user2.changeUsername());
-

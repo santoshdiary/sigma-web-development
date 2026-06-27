@@ -37,8 +37,8 @@ const booksLibrary = [
 
 console.log("List of book that you filtered are----");
 
-let userNeedBook = booksLibrary.filter((bk)=>{
-    return bk.genre==='History' && bk.edition>=1995 
+let userNeedBook = booksLibrary.filter((bk) => {
+  return bk.genre === 'History' && bk.edition >= 1995
 })
 console.log(userNeedBook);
 

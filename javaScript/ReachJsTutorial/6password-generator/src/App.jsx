@@ -12,7 +12,7 @@ function App() {
   let passwordRef = useRef(null); // used to take reference of an variable
 
   let passwordGenerator = useCallback(() => {
-    //usecallback hook hai, jo kisi function ko remember (memoize) karta hai taaki har re-render par naya function object na bane.
+    //usecallback ek hook hai, jo kisi function ko remember (memoize) karta hai taaki har re-render par naya function object na bane.
 
     let temp = "";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
