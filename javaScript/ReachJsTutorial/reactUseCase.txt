@@ -55,9 +55,13 @@ on index.html using target id "root" on index file.
 
 4. can create our own components like chai.jsx
 
+
 ----------PROP (PROPPERTIES) IN REACT -----
 To pass data from a parent component down to a child component that make us to reuse a compontents with different values. 
+
+(Props, which is short for properties, is the way for parent components to pass data down to the child component. Props can be of any type: strings, numbers, booleans, objects, or arrays. PROPS BASICALL AN "OBJECT" THAT PASSSES IN COMPONENET) 
 
 useState hook's setter works in batch to reflect the output in screen that's why calling mutlitple time calling this function will not reflect output on screen different. 
 
 Remember the counter interview problem in this series. 
+
