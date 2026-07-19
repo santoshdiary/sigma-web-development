@@ -2,6 +2,7 @@ import { useState } from 'react'
 import bgImage from './assets/bg.jpg'
 import InputBox from './components/InputBox'
 import useCurrencyInfo from './hooks/userCurrencyInfo.js'
+import Footer from './components/Footer.jsx'
 
 function App() {
 
@@ -125,10 +126,13 @@ function App() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                convert()
+                convert() //when form is  submitted then convert method should fire
               }}
             >
               <div className="w-full mb-1">
+               
+                {/*using Input component */}
+
                 <InputBox
                   label="From"
                   amount={amount}
@@ -137,7 +141,10 @@ function App() {
                   selectCurrency={from}
                   onAmountChange={(amount) => setAmount(amount)}
                 />
+
               </div>
+
+                  {/* swap button */}
               <div className="relative w-full h-0.5">
                 <button
                   type="button"
@@ -147,6 +154,8 @@ function App() {
                   ⇅ swap
                 </button>
               </div>
+
+
               <div className="w-full mt-1 mb-4">
                 <InputBox
                   label="To"
@@ -157,6 +166,7 @@ function App() {
                   amountDisable
                 />
               </div>
+
               <button
                 type="submit"
                 className="w-full bg-blue-600 hover:bg-blue-700 transition-colors text-white font-medium px-4 py-3 rounded-lg shadow-lg"
@@ -167,6 +177,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Footer/>
     </>
   );
 }
