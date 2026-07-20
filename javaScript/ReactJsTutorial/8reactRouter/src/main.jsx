@@ -29,7 +29,7 @@ const router = createBrowserRouter(
       <Route path="github" loader={githubInfoLoader} element={<Github />} />
       
       <Route path="More" element={<More/>}>
-      <Route path='More1' element={<More1/>}/>
+          <Route path='More1' element={<More1/>}/>
       </Route> 
 
      <Route path="Home" element={<Home/>}/>

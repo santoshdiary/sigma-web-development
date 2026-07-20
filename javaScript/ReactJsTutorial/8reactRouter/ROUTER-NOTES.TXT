@@ -1,5 +1,5 @@
 ==========REACT ROUTER==============
-In React, a Router is a library that lets you create a Single Page Application (SPA) with multiple pages without reloading the browser.
+In React, a Router is a "library" that lets you create a Single Page Application (SPA) with multiple pages without reloading the browser.
 The most commonly used library is React Router.
 
 Why do we need a Router?
@@ -30,3 +30,7 @@ will alawys render a specific page
 
 <NavLink/> - is advance stuff of link that provide additional feature like 
 it allow writing className={} for active component. 
+
+--------HOW TO INSTALL REACT-ROUTER?--------
+after setup react project run this command-
+npm i react-router-dom 

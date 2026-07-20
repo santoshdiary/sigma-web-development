@@ -1,0 +1,9 @@
+--CONTEXT API IN REACT---
+
+The React Context API is a built-in feature that allows you to share data 
+globally across your component tree without passing props manually down through
+ every level, a problem known as prop drilling. It is ideal for passing down 
+ data that many components need, such as UI themes, authenticated user data, 
+ or language settings.
+
+ ![alt text](https://media.geeksforgeeks.org/wp-content/uploads/20250813120915555965/context_api.webp)
