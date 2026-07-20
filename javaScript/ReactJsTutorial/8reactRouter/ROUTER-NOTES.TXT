@@ -1,0 +1,32 @@
+==========REACT ROUTER==============
+In React, a Router is a library that lets you create a Single Page Application (SPA) with multiple pages without reloading the browser.
+The most commonly used library is React Router.
+
+Why do we need a Router?
+Imagine you're building a website with these pages:
+Home
+About
+Contact
+Profile
+
+Without React Router:
+
+"Clicking a link reloads the entire page".
+The browser requests a new HTML page from the server every time.
+
+With React Router:
+
+Only the required React component changes.
+The page doesn't refresh.
+The app feels faster and smoother.
+
+---TYPE OF ROUTING--
+1. SIMPLE ROUTE
+2. NESTED ROUTE - LIKE ./product/men/kid
+3. DYNAMIC ROUTE. ./about/anything - will render a specific comoponent './couses/:id'
+will alawys render a specific page 
+
+<LINK/> - is react router stuff that replace "a" tag since anchor tag reload the whole page. it is used for routing the different component (href--> to)
+
+<NavLink/> - is advance stuff of link that provide additional feature like 
+it allow writing className={} for active component. 
