@@ -1,0 +1,164 @@
+
+REACT REDUX toolkit IS INDEPENDED STATE MANGMENT JAVASCRIPT LIBRARY THAT INTEGRATED WITH RACT TO MANANGE
+STATE IN LARGE APP TO EFFICIENTLY MANAGE STATE IN CENTRAL MANNER THAT GIVE ACCESS OF 
+STATE FOR EVERY component. 
+
+
+First, the Problem Redux Solves
+
+Imagine you have this app:
+
+App
+│
+├── Navbar
+├── Sidebar
+├── ProductList
+├── Cart
+└── Profile
+
+Suppose the user adds a product to the cart.
+Which component has the cart data?
+Maybe:
+ProductList
+But now:
+
+Navbar needs cart count.
+Cart page needs cart items.
+Checkout page needs cart items.
+
+How do they all access the same data?
+Without Redux
+You pass data through props.
+
+App
+ │
+ ▼
+Navbar
+ │
+ ▼
+Sidebar
+ │
+ ▼
+ProductList
+ │
+ ▼
+Cart
+
+"This is called Prop Drilling".
+
+Example:
+
+<App cart={cart}>
+  <Navbar cart={cart} />
+  <Sidebar cart={cart} />
+  <Product cart={cart} />
+</App>
+
+Even components that don't need cart may have to pass it down.
+As the app grows, this becomes difficult to manage.
+
+Redux Solution---
+
+Redux creates one central place to store shared data.
+Think of it like this:
+
+           Redux Store
+        ----------------
+        cart
+        user
+        theme
+        products
+        ----------------
+
+Now any component can access it directly.
+
+Navbar  ─┐
+Cart     ├──► Store
+Profile  ┘
+No need to pass props through multiple components.
+
+Real-Life Analogy---
+
+Imagine a college.
+
+Without Redux:
+
+Every student asks every teacher:
+
+"How many holidays are left?"
+
+Everyone gives different answers.
+
+With Redux:
+
+The principal writes it on a notice board.
+
+Everyone reads the same notice.
+
+Redux Store = Notice Board
+
+
+
+------------Main Parts of Redux---------------
+1. Store
+
+The store holds all shared data.
+
+Store
+├── User
+├── Cart
+├── Theme
+└── Products
+2. Action
+
+An action describes what happened.
+Example:
+
+ADD_TO_CART
+or
+REMOVE_ITEM 
+
+An action doesn't change the data itself. It only describes the event.
+
+3. Reducer
+
+The reducer receives the current state and the action, then returns the new state.
+
+Example:
+
+Current Cart
+↓
+ADD_TO_CART
+↓
+New Cart
+Flow
+
+
+User clicks:
+
+Add to Cart
+↓
+Dispatch Action
+ADD_TO_CART
+↓
+Reducer runs
+↓
+Store updates
+↓
+All components using cart automatically update.
+
+Visual Flow
+Button Click
+      │
+      ▼
+Dispatch Action
+      │
+      ▼
+Reducer
+      │
+      ▼
+Redux Store Updated
+      │
+      ▼
+React UI Re-renders
+Example
