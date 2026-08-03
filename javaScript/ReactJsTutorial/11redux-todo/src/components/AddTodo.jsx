@@ -1,48 +1,86 @@
-import { useEffect, useState } from "react"
-import { useDispatch } from 'react-redux'
-import { addTodo, updateTodo } from '../features/todoSlice'
+import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { addTodo, updateTodo } from "../features/todoSlice";
 
 function AddTodo({ editingTodo, onUpdateComplete }) {
-  const [input, setInput] = useState('')
-  const dispatch = useDispatch()
+  const [input, setInput] = useState("");
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    setInput(editingTodo ? editingTodo.text : '')
-  }, [editingTodo])
+    setInput(editingTodo ? editingTodo.text : "");
+  }, [editingTodo]);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    const trimmedInput = input.trim()
+    e.preventDefault();
 
-    if (!trimmedInput) return
+    const trimmedInput = input.trim();
+    if (!trimmedInput) return;
 
     if (editingTodo) {
-      dispatch(updateTodo({ id: editingTodo.id, text: trimmedInput }))
-      onUpdateComplete?.()
+      dispatch(updateTodo({ id: editingTodo.id, text: trimmedInput }));
+      onUpdateComplete?.();
     } else {
-      dispatch(addTodo(trimmedInput))
+      dispatch(addTodo(trimmedInput));
     }
 
-    setInput('')
-  }
+    setInput("");
+  };
 
   return (
-    <form onSubmit={handleSubmit} className="space-x-3 mt-12 text-center">
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-3xl mx-auto mt-10 flex flex-col sm:flex-row gap-4"
+    >
       <input
         type="text"
-        className="bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-        placeholder="Enter a Todo..."
+        placeholder="✍️ Enter your task..."
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        className="
+          flex-1
+          rounded-xl
+          border border-blue-200/60
+          bg-white/80
+          backdrop-blur-md
+          px-5
+          py-3
+          text-gray-700
+          placeholder:text-gray-400
+          shadow-lg
+          focus:outline-none
+          focus:ring-4
+          focus:ring-blue-300/40
+          focus:border-blue-500
+          transition-all
+          duration-300
+        "
       />
+
       <button
         type="submit"
-        className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        className="
+          rounded-xl
+          bg-gradient-to-r
+          from-blue-600
+          to-sky-500
+          px-7
+          py-3
+          font-semibold
+          text-white
+          shadow-lg
+          transition-all
+          duration-300
+          hover:scale-105
+          hover:shadow-blue-400/40
+          hover:from-blue-700
+          hover:to-sky-600
+          active:scale-95
+        "
       >
-        {editingTodo ? 'Update Todo' : 'Add Todo'}
+        {editingTodo ? "Update Todo" : "Add Todo"}
       </button>
     </form>
-  )
+  );
 }
 
-export default AddTodo
+export default AddTodo;

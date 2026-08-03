@@ -65,3 +65,92 @@ useState hook's setter works in batch to reflect the output in screen that's why
 
 Remember the counter interview problem in this series. 
 
+
+-------forwardRef hook----- used to take refrence of element to use another place to link that 
+
+-----------------------What is CORS?------------------------------------
+CORS (Cross-Origin Resource Sharing) is a browser security mechanism.
+It controls whether a web page can access resources from a different origin.
+The server grants permission, and the browser enforces it.
+2. What is an Origin?
+
+Origin = Protocol + Domain + Port
+
+Examples:
+
+http://localhost:5173
+http://localhost:8000   ❌ Different port → Different origin
+
+https://example.com
+http://example.com      ❌ Different protocol → Different origin
+
+
+3. Same-Origin Policy (SOP)
+Browsers allow requests to the same origin by default.
+Requests to a different origin are restricted unless the server allows them through CORS.
+4. Why is CORS Needed?
+
+Frontend:
+
+http://localhost:5173
+
+Backend:
+
+http://localhost:8000
+fetch("http://localhost:8000/api/posts");
+
+Different origins → Browser checks CORS.
+
+5. How CORS Works
+Frontend sends request.
+Browser detects a cross-origin request.
+Browser checks the server's CORS headers.
+If allowed → Response reaches JavaScript.
+If not allowed → Browser blocks the response.
+6. Important Response Header
+Access-Control-Allow-Origin: http://localhost:5173
+
+This tells the browser which origin is allowed.
+
+7. Enable CORS in Express
+
+Install:
+
+npm install cors
+
+Allow all origins:
+
+import cors from "cors";
+
+app.use(cors());
+
+Allow only your frontend:
+
+app.use(cors({
+  origin: "http://localhost:5173",
+}));
+8. Credentials (Cookies/Sessions)
+
+Frontend:
+
+fetch(url, {
+  credentials: "include",
+});
+
+Backend:
+
+app.use(cors({
+  origin: "http://localhost:5173",
+  credentials: true,
+}));
+9. Common Error
+Access to fetch has been blocked by CORS policy.
+
+Meaning: The browser blocked the response because the server didn't allow your origin.
+
+------DEPLOY BEHIND THE SCENE-------
+
+At the end browser only uderstand html,css & javascript, so node module folder help to run project
+in localhost, while deploy only "DIST" folder considered that contain, only html,css & js files
+when we run build command, for vite- npm run build, then, dist folder created. 
+platform like  vercel automatically run this command and rebuil this to deployment 
