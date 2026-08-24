@@ -1,0 +1,141 @@
+----- WHAT IS BACKEND?----
+
+
+HOW INTERNET WORKS?
+CLIENT
+SERVER / WEB_SERVER- 
+PORT --
+HTTP/ HTTPS -data not exposed on url since it is increpted
+REQUEST,
+REPONSE,
+
+nodejs(c++ & js ka wraper) ke pass server banane ki capability hai, express.js joki npm package
+hai, ke throught web responses & requests ko handle kiya jata hai. 
+
+
+frontend ki trah, backend ko bhi cloud me host/Deploy kiya jata hai, jiske liye hame cloud
+per coumputer rent karna pdta hai. 
+-------------------------NOTES--------------
+Backend Theory Notes
+
+Essential backend concepts every web developer should understand.
+
+Client–Server Architecture
+
+Client sends requests; server processes them and returns responses.
+
+HTTP Protocol
+
+Understand requests, responses, URLs, headers, body, and query parameters.
+
+HTTP Methods
+
+GET(Read), POST(Create), PUT(Replace), PATCH(Update), DELETE(Delete).
+
+HTTP Status Codes
+
+200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Server Error.
+
+REST API
+
+Stateless APIs using CRUD endpoints for resources.
+
+JSON
+
+Standard data format for communication between frontend and backend.
+
+Database Basics
+
+Tables/Collections, Rows/Documents, IDs, Relationships.
+
+CRUD
+
+Create, Read, Update, Delete operations.
+
+Authentication vs Authorization
+
+Authentication = Who are you? Authorization = What can you do?
+
+Routing
+
+Maps URLs to backend logic.
+
+Middleware
+
+Functions executed before route handlers (auth, validation, logging).
+
+MVC Architecture
+
+Model, View, Controller separation (APIs commonly use Routes → Controller → Model → Database).
+
+Validation
+
+Never trust user input; validate emails, passwords, required fields, etc.
+
+Error Handling
+
+Use try/catch and return meaningful error responses.
+
+Environment Variables
+
+.env stores secrets like DB URLs and JWT secrets.
+
+CORS
+
+Controls which origins can access your backend.
+
+Cookies vs JWT
+
+Cookies are browser-managed; JWT is token-based authentication.
+
+Security Basics
+
+Password hashing, HTTPS, SQL/NoSQL Injection, XSS, CSRF awareness.
+
+API Testing
+
+Use Postman, Thunder Client, or curl.
+
+File Upload
+
+Upload files to storage and save URLs in the database.
+
+Deployment
+
+Deploy backend to cloud (Render, Railway, etc.).
+
+Request Lifecycle
+
+Client → HTTP Request → Route → Middleware → Controller → Database → Response → Client.
+
+Recommended Learning Order
+
+1. Client–Server Architecture
+
+2. HTTP
+
+3. Request & Response
+
+4. REST APIs
+
+5. JSON
+
+6. Node.js
+
+7. Express.js
+
+8. Routing
+
+9. Middleware
+
+10. MongoDB & Mongoose
+
+11. CRUD
+
+12. Authentication (JWT + bcrypt)
+
+13. CORS
+
+14. Error Handling
+
+15. Deployment
