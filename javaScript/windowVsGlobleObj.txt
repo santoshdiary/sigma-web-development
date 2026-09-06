@@ -1,7 +1,7 @@
 strict mode vs non strict mode after ES5 
 //'use strict'
-global Object: in window it is called "window", but in node js, It is called "global" 
-'globalThis' points to global object of the environment 
+global Object: in browser it is called "window", but in node js, It is called "global" 
+'global This' points to global object of the environment such as browser-> window & node-> global
 // this keyword in global scope :Node js (empty object {}), in browser it will point to global object(Window)
 
 // normal function :without strict mode, this will point to "global object", in strict mode will point to "undefine"
