@@ -1,8 +1,10 @@
-import express from "express";
+import express from "express"; 
+
+/* Express Js is framwrok, designed for create webserver & api creation. handle client request and fetch data from db*/
 
 const app = express(); // storing exprss in a variable "app"
 
-app.get("/", (req, res) => {   // sending get request to server that in / (home directory), callback include to parameters request and response & eventally server respose hello world 
+app.get("/", (req, res) => {   // sending get request to server in "/" (home directory).  callback includes two parameters "request" and "response" & eventally server respose hello world .
   res.send("Hello World");
 });
 
