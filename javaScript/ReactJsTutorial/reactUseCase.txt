@@ -46,7 +46,7 @@ on index.html using target id "root" on index file.
 
 1. while making components (jsx file), always capitalize name (function)
 2. file extension .jsx, bc some libraries force us that .
-3. while returning jsx we use empty <> called "Fragment" to bundle the more than one element,
+3. while returning jsx we use empty  tag <> called "Fragment" to bundle the more than one element,
  since can return only one element 
 <>
   <h1> Hello world </h1>
@@ -57,9 +57,9 @@ on index.html using target id "root" on index file.
 
 
 ----------PROP (PROPPERTIES) IN REACT -----
-To pass data from a parent component down to a child component that make us to reuse a compontents with different values. 
+To pass data from a parent component down to a child component that make us to reuse a compontents with different values.  (eg. App.jsx --to->   Card.jsx )
 
-(Props, which is short for properties, is the way for parent components to pass data down to the child component. Props can be of any type: strings, numbers, booleans, objects, or arrays. PROPS BASICALL AN "OBJECT" THAT PASSSES IN COMPONENET) 
+(Props, which is short for properties, is the way for parent components to pass data down to the child component. Props can be of any type: strings, numbers, booleans, objects, or arrays. PROPS BASICALLY AN "OBJECT" THAT PASSSES IN COMPONENET) 
 
 useState hook's setter works in batch to reflect the output in screen that's why calling mutlitple time calling this function will not reflect output on screen different. 
 

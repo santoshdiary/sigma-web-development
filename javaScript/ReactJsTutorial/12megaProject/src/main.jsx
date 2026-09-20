@@ -14,11 +14,13 @@ import EditPost from "./pages/EditPost.jsx";
 import Post from "./pages/Post.jsx";
 import AllPosts from "./pages/AllPost.jsx";
 
+
+// object based or data routing techniuqe (n)
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
-    children: [
+    path: "/",              // root route
+    element: <App />,       // parent element
+    children: [             // child element: since it is nested routing
         {
             path: "/",
             element: <Home />,
@@ -73,6 +75,29 @@ const router = createBrowserRouter([
     ],
 },
 ])
+//----using jsx ---
+
+/*
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<Layout />}>
+      <Route path='' element={<Home />} />
+      <Route path='about' element={<About />} />
+      <Route path='contact' element={<Contact />} />
+      <Route path='user/:userid' element={<User />} />
+      <Route 
+      loader={githubInfoLoader}
+      path='github' 
+      element={<Github />}
+       />
+    </Route>
+  )
+)
+*/
+
+
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
