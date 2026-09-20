@@ -14,50 +14,46 @@ hai, ke throught web responses & requests ko handle kiya jata hai.
 
 
 frontend ki trah, backend ko bhi cloud me host/Deploy kiya jata hai, jiske liye hame cloud
-per coumputer rent karna pdta hai. 
+per coumputer rent karna pdta hai, so that it is accessible for users. 
 -------------------------NOTES--------------
 Backend Theory Notes
 
 Essential backend concepts every web developer should understand.
 
-Client–Server Architecture
-
+-------Client–Server Architecture-----
 Client sends requests; server processes them and returns responses.
 
-HTTP Protocol
 
+------HTTP Protocol----
 Understand requests, responses, URLs, headers, body, and query parameters.
 
-HTTP Methods
 
+******************** HTTP Methods ****************
 GET(Read), POST(Create), PUT(Replace), PATCH(Update), DELETE(Delete).
+
 
 HTTP Status Codes
 
 200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Server Error.
 
-REST API
-
+################## REST API ########## Representational state transfer.
 Stateless APIs using CRUD endpoints for resources.
 
-JSON
 
+------------------------JSON------------------
 Standard data format for communication between frontend and backend.
 
-Database Basics
-
+----------------------Database Basics---------------
 Tables/Collections, Rows/Documents, IDs, Relationships.
 
-CRUD
-
+----------------CRUD----------
 Create, Read, Update, Delete operations.
 
-Authentication vs Authorization
 
+------Authentication vs Authorization-------
 Authentication = Who are you? Authorization = What can you do?
 
-Routing
-
+------------------Routing------------
 Maps URLs to backend logic.
 
 Middleware
@@ -70,17 +66,19 @@ Model, View, Controller separation (APIs commonly use Routes → Controller → 
 
 Validation
 
-Never trust user input; validate emails, passwords, required fields, etc.
+==> Never trust user input; validate emails, passwords, required fields, etc.
 
 Error Handling
 
 Use try/catch and return meaningful error responses.
 
-Environment Variables
 
+************************ Environment Variables *****************
 .env stores secrets like DB URLs and JWT secrets.
 
-CORS
+
+
+------------------CORS------------
 
 Controls which origins can access your backend.
 
@@ -104,38 +102,24 @@ Deployment
 
 Deploy backend to cloud (Render, Railway, etc.).
 
-Request Lifecycle
+++++++++++++++++++++++++  Request Lifecycle  +++++++++++++++++++
 
 Client → HTTP Request → Route → Middleware → Controller → Database → Response → Client.
 
 Recommended Learning Order
 
 1. Client–Server Architecture
-
 2. HTTP
-
 3. Request & Response
-
 4. REST APIs
-
 5. JSON
-
 6. Node.js
-
 7. Express.js
-
 8. Routing
-
 9. Middleware
-
 10. MongoDB & Mongoose
-
 11. CRUD
-
 12. Authentication (JWT + bcrypt)
-
 13. CORS
-
 14. Error Handling
-
 15. Deployment

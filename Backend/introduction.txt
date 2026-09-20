@@ -1,0 +1,18 @@
+Setting up the Environment: The project requires Node.js and npm. A Node project is initialized using npm init to create a package.json file.
+
+Building the Server: Using the Express framework, a basic server is created to handle GET requests on different routes like /, /twitter, /login, and /youtube.
+
+Environment Variables: To handle sensitive data securely and manage configuration, such as the server port, the dotenv package is used. The .env file is added to .gitignore to prevent exposing secret information.
+
+Production Deployment:
+The code is pushed to a GitHub repository.
+DigitalOcean (App Platform) is used for deployment by connecting the GitHub repository.
+"Environment variables" are configured in the cloud console to ensure the production app remains secure.
+Important Takeaways
+
+Persistence: A server needs to stay running to listen for requests; npm start is used to initiate the entry point (index.js).
+Routing: Handling different URL paths allows for a dynamic API structure.
+
+Security: Never push sensitive credentials or configuration files, like .env, to public repositories.
+
+Workflow: The modern deployment loop involves coding, committing to GitHub, and letting the cloud platform automatically rebuild and redeploy the service.
